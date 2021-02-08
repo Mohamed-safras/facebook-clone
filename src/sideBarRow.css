@@ -1,0 +1,27 @@
+.sideBarRow {
+  position: sticky;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.sideBarRow:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.sideBarRow > h4 {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.sideBarRow > .MuiSvgIcon-root {
+  color: #2e81f4;
+  font-size: xx-large;
+}
+
+@media (max-width: 600px) {
+  .sideBarRow {
+    display: none;
+  }
+}

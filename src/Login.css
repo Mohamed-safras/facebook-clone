@@ -1,0 +1,32 @@
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login > div > img {
+  object-fit: contain;
+  height: 150px;
+}
+
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form > .btn {
+  width: 300px !important;
+  background-color: #2e81f4 !important;
+  color: #eff3f5 !important;
+  font-weight: 800 !important;
+  cursor: pointer;
+}
+.form > .btn:hover {
+  color: #2e81f4 !important;
+  background-color: white !important;
+}
