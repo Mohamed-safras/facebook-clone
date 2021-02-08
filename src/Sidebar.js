@@ -9,10 +9,14 @@ import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
+
 function Sidebar() {
+  const user = useSelector(selectUser);
   return (
     <div className="sidebar">
-      <SidebarRow title="aw safras" />
+      <SidebarRow title={user.displayName} src={user.photo} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="COVID-19 Information Center"

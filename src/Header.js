@@ -12,14 +12,19 @@ import AddIcon from "@material-ui/icons/Add";
 import ForumSharpIcon from "@material-ui/icons/ForumSharp";
 import NotificationsActiveSharpIcon from "@material-ui/icons/NotificationsActiveSharp";
 import ExpandMoreSharpIcon from "@material-ui/icons/ExpandMoreSharp";
-import MenuIcon from "@material-ui/icons/Menu";
-
+import { auth } from "./firebase";
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser, logout } from "./features/userSlice";
 function Header() {
+  const user = useSelector(selectUser);
   const [input, setInput] = useState("");
-
+  const dispatch = useDispatch();
   const submit = (e) => {
     e.preventDefault();
     setInput(input);
+  };
+  const Logout = () => {
+    dispatch(logout(auth.signOut()));
   };
   return (
     <div className="header">
@@ -57,9 +62,9 @@ function Header() {
         </div>
       </div>
       <div className="header-right">
-        <div className="header-info">
-          <Avatar />
-          <h4>aw safras</h4>
+        <div onClick={Logout} className="header-info">
+          <Avatar src={user.photo} />
+          <h4>{user.displayName}</h4>
         </div>
 
         <IconButton>

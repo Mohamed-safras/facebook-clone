@@ -4,8 +4,11 @@ import VideocamIcon from "@material-ui/icons/Videocam";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import "./MessageSender.css";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
 
 function MessageSender() {
+  const user = useSelector(selectUser);
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const handSubmit = (e) => {
@@ -16,14 +19,14 @@ function MessageSender() {
   return (
     <div className="messageSender">
       <div className="messageSender__top">
-        <Avatar />
+        <Avatar src={user.photo} />
         <form>
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             className="messageSender__input"
             style={{ width: "75%" }}
-            placeholder={`What's on your mind ?,aw safras`}
+            placeholder={`What's on your mind ?,${user.displayName}`}
             type="text"
           />
           <input

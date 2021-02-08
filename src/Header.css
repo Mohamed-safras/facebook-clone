@@ -61,6 +61,7 @@
 .header-right {
   padding-left: 10px;
   display: flex;
+  cursor: pointer;
 }
 
 .header-info {
