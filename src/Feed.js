@@ -12,6 +12,10 @@ function Feed() {
       <MessageSender />
 
       <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 }

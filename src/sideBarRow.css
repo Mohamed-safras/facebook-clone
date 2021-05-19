@@ -1,9 +1,9 @@
 .sideBarRow {
-  position: sticky;
   display: flex;
   padding: 10px;
   align-items: center;
   cursor: pointer;
+  top: 10px;
 }
 .sideBarRow:hover {
   background-color: lightgray;

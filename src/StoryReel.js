@@ -10,11 +10,20 @@ import { selectUser } from "./features/userSlice";
 function StoryReel() {
   const user = useSelector(selectUser);
   return (
-    <div className="storyReel">
-      <Story image={img1} title={user.displayName} profile={user.photoURL} />
-      <Story image={img2} title="imthiyas" />
-      <Story image={img3} title="mohamed" />
-      <Story image={img3} title="mohamed" />
+    <div className="storys">
+      <div className="storyReel">
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+      </div>
     </div>
   );
 }

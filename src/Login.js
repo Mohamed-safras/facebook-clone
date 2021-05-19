@@ -56,6 +56,10 @@ const Login = () => {
         alert(error);
       });
   };
+  const readImage = (e) => {
+    const file = e.target.files[0];
+    console.log(file);
+  };
   return (
     <div className="login">
       <div className="login__left">
@@ -73,12 +77,7 @@ const Login = () => {
               type="text"
               placeholder="Full Name"
             />
-            <input
-              value={photo}
-              onChange={(e) => setPhoto(e.target.value)}
-              type="text"
-              placeholder="PhotoUrl(optional)"
-            />
+
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -91,6 +90,7 @@ const Login = () => {
               type="password"
               placeholder="Password"
             />
+            <input type="file" accept="image/*" onChange={readImage} />
             <Button onClick={signIn} type="submit" className="login_btn">
               log in
             </Button>

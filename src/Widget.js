@@ -1,18 +1,8 @@
 import React from "react";
-
+import "./Widget.css";
 function Widget() {
   return (
-    <div className="widget">
-      <iframe
-        src=""
-        frameborder="0"
-        width="340"
-        height="100%"
-        style={{ border: "none", overflow: "hidden" }}
-        scrolling="no"
-        allowTransparency="true"
-      ></iframe>
-    </div>
+    <div className="widget">hjsfchvzbnczvcxbnzvcbzcvzbncvzcbnzcvzxbvcbzshj</div>
   );
 }
 

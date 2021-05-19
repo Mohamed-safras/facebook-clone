@@ -1,3 +1,20 @@
 .storyReel {
   display: flex;
+  padding-top: 10px;
+}
+
+.storys {
+  overflow-x: scroll;
+  position: relative;
+  overflow-y: hidden;
+  width: 500px;
+}
+
+.storys::-webkit-scrollbar {
+  display: none;
+}
+
+.storys {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
