@@ -13,15 +13,15 @@ function StoryReel() {
     <div className="storys">
       <div className="storyReel">
         <Story image={img1} title={user.displayName} profile={user.photoURL} />
-        <Story image={img1} title={user.displayName} profile={user.photoURL} />
-        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img2} title={user.displayName} profile={user.photoURL} />
+        <Story image={img3} title={user.displayName} profile={user.photoURL} />
         <Story image={img1} title={user.displayName} profile={user.photoURL} />
 
+        <Story image={img2} title={user.displayName} profile={user.photoURL} />
+        <Story image={img3} title={user.displayName} profile={user.photoURL} />
         <Story image={img1} title={user.displayName} profile={user.photoURL} />
-        <Story image={img1} title={user.displayName} profile={user.photoURL} />
-        <Story image={img1} title={user.displayName} profile={user.photoURL} />
-        <Story image={img1} title={user.displayName} profile={user.photoURL} />
-        <Story image={img1} title={user.displayName} profile={user.photoURL} />
+        <Story image={img2} title={user.displayName} profile={user.photoURL} />
+        <Story image={img3} title={user.displayName} profile={user.photoURL} />
         <Story image={img1} title={user.displayName} profile={user.photoURL} />
       </div>
     </div>

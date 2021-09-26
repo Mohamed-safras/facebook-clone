@@ -1,4 +1,18 @@
 .sidebar {
   position: fixed;
   height: 100vh;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar-track {
+  background: #eff2f5; /* color of the tracking area */
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #2e81f4;
+  border-radius: 5px;
+  border: 2px solid #eff2f5;
 }
